@@ -1,0 +1,45 @@
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.float-animation-1 {
+  animation: floatAnimation 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+.float-animation-2 {
+  animation: floatAnimation 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  animation-delay: 150ms;
+}
+
+.float-animation-3 {
+  animation: floatAnimation 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  animation-delay: 210ms; /* Reduced from 300ms (30% faster) */
+}
+
+/* Existing styles remain unchanged */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pulse-animation {
+  animation: pulse 1s infinite ease-in-out;
+}
+
+.frog-trait {
+  will-change: transform;
+}
+
